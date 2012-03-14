@@ -1,4 +1,4 @@
-= nio-percent
+= nio-percent_fmt
 
 Description goes here.
 
