@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "nio-percent_fmt"
   gem.homepage = "http://github.com/cie/nio-percent_fmt"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Provides percent format for nio}
+  gem.description = %Q{Provides a mix-in for the Nio::Fmt class to support percent formats}
   gem.email = "kallo.bernat@gmail.com"
   gem.authors = ["Bernát Kalló"]
   # dependencies defined in Gemfile

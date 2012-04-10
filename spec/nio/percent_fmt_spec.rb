@@ -3,7 +3,7 @@ require "nio"
 
 describe "Nio::PercentFmt" do
   specify "write" do
-    fmt = Nio::PercentFmt.new.mode!(:sig, 3)
+    fmt = Nio::Fmt.new.mode!(:sig, 3).percent!
     
     0.75.nio_write(fmt).should == "75.0%"
     1.75.nio_write(fmt).should == "175%"
@@ -12,7 +12,7 @@ describe "Nio::PercentFmt" do
   end
 
   specify "read" do
-    fmt = Nio::PercentFmt.new.mode!(:sig, 3)
+    fmt = Nio::Fmt.new.mode!(:sig, 3).percent!
     
     Float.nio_read("75.0%", fmt).should == 0.75
     Float.nio_read("175%", fmt).should == 1.75
