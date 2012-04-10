@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/nio/percent_fmt.rb",
+    "nio-percent_fmt.gemspec",
     "spec/nio/percent_fmt_spec.rb",
     "spec/spec_helper.rb"
   ]
